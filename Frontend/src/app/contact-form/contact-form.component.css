@@ -1,0 +1,15 @@
+#content {
+  width: 595px;
+  height: 842px;
+}
+
+#content>table {
+  max-width: 2480px;
+  width: 100%;
+}
+
+#content>table td {
+  width: auto;
+  overflow: hidden;
+  word-wrap: break-word;
+}

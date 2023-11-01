@@ -1,0 +1,36 @@
+<div class="container-fluid p-5 text-center d-flex justify-content-center flex-column gap-5">
+  <div class="container">
+    <form (ngSubmit)="onSubmit()">
+      <h5 class="title">Contact us</h5>
+      <p class="description">{{ "Lets talk about everything!"}}</p>
+      <p>yotanovichalex@gmail.com</p>
+      <div>
+        <input type="text" class="form-control form-control-sm rounded-0 shadow-sm rounded mb-3 form-input"
+          [(ngModel)]="name" name="name" placeholder="Name" required>
+      </div>
+      <div>
+        <input type="email" class="form-control form-control-sm rounded-0 shadow-sm rounded mb-3 form-input"
+          [(ngModel)]="email" name="email" placeholder="Email" required>
+      </div>
+      <div>
+        <input type="number" class="form-control form-control-sm rounded-0 shadow-sm rounded mb-3 form-input"
+          [(ngModel)]="price" name="price" placeholder="Product price..." required>
+      </div>
+      <div>
+        <input type="number" class="form-control form-control-sm rounded-0 shadow-sm rounded mb-3 form-input"
+          [(ngModel)]="quantity" name="quantity" placeholder="Product quantity..." required>
+      </div>
+      <div>
+        <input type="date" class="form-control form-control-sm rounded-0 shadow-sm rounded mb-3 form-input"
+          [(ngModel)]="date" name="date" placeholder="Date of publishing.." required>
+      </div>
+      <div>
+        <textarea class="form-control form-control-sm rounded-0 shadow-sm rounded mb-3 form-text-area"
+          [(ngModel)]="message" name="message" rows="5" cols="30" placeholder="Message" required></textarea>
+      </div>
+      <div class="submit-button-wrapper">
+        <button type="submit" class="btn btn-sm btn-outline-info rounded-0 text-light">Send Mail</button>
+      </div>
+    </form>
+  </div>
+</div>
